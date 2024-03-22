@@ -16,3 +16,6 @@ Pada commit ke-3 ini saya merubah lagi method `handle_connection` untuk menyelek
 
 Berikut saya sertakan hasilnya:
 ![Commit 2 screen capture](/images/commit3.png)
+
+## **Commit 4 Reflection notes**
+Pada commit kali ini, method `handle_connection` ditambahkan sebuah endpoint `/sleep`, endpoint ini digunakan untuk memberikan simulasi bagaimana server yang berbasis single-threaded menangani permintaan yang memerlukan waktu pemrosesan lebih lama. Pada endpoint ini, `thread::sleep(Duration::from_secs(10));` dieksekusi untuk menunda pemrosesan selama 10 detik. 
