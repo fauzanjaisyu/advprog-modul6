@@ -10,3 +10,9 @@ Pada commit ke-2 ini method `handle_connection` dilakukan beberapa perubahan di 
 
 Berikut saya sertakan hasilnya:
 ![Commit 2 screen capture](/images/commit2.png)
+
+## **Commit 3 Reflection notes**
+Pada commit ke-3 ini saya merubah lagi method `handle_connection` untuk menyeleksi permintaan dan mengembalikan respons yang sesuai, apabila request yang diajukan itu valid alias halaman untuk request tadi tersedia maka halaman tersebut dapat ditampilkan, namun apabila tidak maka saya akan mengarahkannya dalam bentuk konten HTML `404.html`
+
+Berikut saya sertakan hasilnya:
+![Commit 2 screen capture](/images/commit3.png)
