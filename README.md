@@ -19,3 +19,6 @@ Berikut saya sertakan hasilnya:
 
 ## **Commit 4 Reflection notes**
 Pada commit kali ini, method `handle_connection` ditambahkan sebuah endpoint `/sleep`, endpoint ini digunakan untuk memberikan simulasi bagaimana server yang berbasis single-threaded menangani permintaan yang memerlukan waktu pemrosesan lebih lama. Pada endpoint ini, `thread::sleep(Duration::from_secs(10));` dieksekusi untuk menunda pemrosesan selama 10 detik. 
+
+## **Commit 5 Reflection notes**
+Untuk commit terakhir, saya menerapkan konsep multi-threading dengan membuat `Threadpool` terlebih dahulu, dengan menggunakan `Threadpool` hal ini memungkinkan untuk menangani berbagai request secara bersamaan. Kemudian saya juga membuat `Workers` yang mempunyai tanggung jawab untuk menerima dan menjalankan pekerjaan yang dikirimkan untuk tiap request. Penggunaan multithreading memungkinkan aplikasi untuk lebih mudah disesuaikan dengan meningkatnya jumlah pengguna atau beban kerja yang lebih tinggi, karena tugas-tugas dapat didistribusikan di antara thread-thread yang tersedia.
